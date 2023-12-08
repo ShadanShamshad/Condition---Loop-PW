@@ -1,0 +1,161 @@
+<!-- What are conditional statements? Explain conditional statements with syntax and examples. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Solution</title>
+    <style>
+    h2{
+        color: blue;
+    }    
+    h3{
+        color: brown;
+    }
+    p{
+        color: #4b870e
+    }
+    span{
+        color: #df02fd;
+        font-size: larger;
+    }
+    h4{
+        color: red;
+    }
+    p{
+        color: crimson;
+    }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<h2>
+    Programming Languages are tools that allow us to write code that instructs the computer to do something. In every programming language, the code needs to make decisions and carry out actions accordingly depending on different inputs.
+</h2>
+
+<h2>
+    JavaScript is a programming language that is commonly used to create interactive and dynamic elements on websites.One of the key features of JavaScript is the ability to use conditional statements to control the flow of a program.
+</h2>
+
+<h3>Conditions work on boolean values, true or false.It is true if it meets the requirement, false otherwise. That is expressions (conditions)are evaluated to be either true or false.</h3>
+
+<p>There are many CONDITIONAL STATEMENTS in JavaScript.</p>
+<ol>
+    <li><span>if statement:</span>
+        <span>SYNTAX</span>
+        <p>
+            if(condition){  <br>
+              //   statements   <br>
+            }
+        </p>
+        <p>
+            The condition is any expression that can be evaluated as true or false. For example, you can use a comparison operator (such as <, >, ==) to compare two values, or you can use a logical operator (such as &&, ||) to combine multiple conditions.
+</p>
+    <p>
+        <span>Example :</span>
+        let dividened = 50; <br>
+        let divisor = 5;    <br><br>
+        if(divisor != 0){   <br>
+            let answer = dividend/divisor ; <br>
+            console.log(answer) <br>
+        }   <br><br>
+
+        //  Output     <br>
+        // 10
+
+    </p>
+    </li>
+
+    <li>
+        <span>if-else statement:</span>
+        <h4>An if statement can also include an optional else statement, which will execute if the condition is false.</h4>
+        <span>SYNTAX</span>
+        <p>
+            if(condition){  <br>
+                // if  statements   <br>
+              } else  {     <br>
+                // else  statements   <br>
+              }
+        </p>
+        <p>
+            <span>Example :</span>
+            <p>Allow only admin to fetch user details</p>
+            isAdmin = false; <br><br>
+
+            if(isAdmin){   <br>
+                console.log("Fetch User Details")<br>
+            } else {    <br>
+                console.log("This operation is only for Admins")<br>
+            }   <br><br>
+    
+            //  Output     <br>
+            // This operation is only for Admins
+    
+        </p>
+
+    </li>
+      
+    <li>
+        <span> Nested if statement:</span>
+        <h4>We can nest if else statements inside another if else statements.</h4>
+        <span>SYNTAX</span>
+            <p>
+                if(condition 1){  <br>
+                    if(condition 2){  <br>
+                     We can add as many nested if as we want   <br>
+                    }   <br>
+                  }
+            </p>
+       <p>
+        <span>Example :</span>
+        <p>Check if the user is logged in and if the logged in user is admin or not.</p>
+      
+
+        if(isLoggedIn){   <br>
+            if(isAdmin) {   <br>
+                console.log("The logged in user is admin.");<br>
+            } else {    <br>
+                console.log("The logged in user is not an admin");<br>
+                }   <br>
+            }   <br><br>
+
+        </p>
+    </li>
+
+    <li>
+        <span> if else if ladder:</span>
+        <h4>JavaScript also supports the use of else if statement, which allows you to chain multiple conditions together also called if else ladder. </h4>
+        <span>SYNTAX</span>
+            <p>
+                if(condition 1){  <br>
+                    //  statement 1   <br>
+                  } else  if (condition 2) {     <br>
+                    //  statement 2   <br>
+                   } else { <br>
+                    //  statement 3   <br>
+                  }
+            </p>
+            <p>
+                <span>Note 1:</span>
+                <h4>You can chain as many else-if statements as you want</h4>
+                <span>Note 2:</span>
+                <h4>Just like the if statement in the if-else ladder also we can omit the last else block, it is not mandatory to put.</h4>
+            </p>
+        <p>
+        <span>Example :</span>
+        <p>Let's write a program to check if the given number is odd or even.
+      
+        if (num == 0) {     <br>
+            console.log("Zero is neither an odd number nor an even number");    <br>
+        }else if (num % 2 == 0) {       <br>
+            console.log("The number given is an even number."); <br>
+        }   else { <br>
+            console.log("The number given is an odd number.");  <br>
+        }
+    </p>
+
+        </p>
+    </li>
+</ol>

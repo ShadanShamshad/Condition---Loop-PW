@@ -1,0 +1,144 @@
+<!-- What are loops, and what do we need them? Explain different types of loops with their syntax and examples. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Solution</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        h2{
+            color: #00ff08;
+        }
+        span{
+            color: #fd029d;
+        font-size: larger;
+        font-weight: bolder;
+        text-decoration: underline;
+        }
+        p{
+            color: #3514dc;
+            font-size: larger;
+        }
+        hr{
+           
+            border-radius: 5px;
+            border-width: 5px;
+            border-color: #fd029d;
+        }
+        h4{
+            color: #dc9d14;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+<h1>Loops are used in programming to repeatedly run a block of code. </h1>
+<h2>
+    For and while loop are use interchangeably, although they have different syntax they have equal capability, developer use different loops in different scenarios.
+</h2>
+<p>
+    We use for loop to run a piece of code until the set condition turns false.
+</p>
+<h3>There are different types of loops in JavaScript.</h3>
+<ol>
+    <li><span>For Loop:</span>
+        <p>
+            <span>SYNTAX</span> <br><br>
+            for (initial expression; condition; update expression) {    <br> 
+                // for loop body    <br>
+            } <br>
+        </p>
+        <p class="red">
+            <span>Example</span>    <br> <br>
+            for (let i = 0; i < 3 ; i++)  {     <br>
+                let name = "PW Skills"; <br>
+                console.log(name);  <br>
+            }   <br><br>
+
+            // Output      <br>
+            / *         <br>
+            PW Skills   <br>
+            PW Skills   <br>
+            PW Skills   <br>
+            * /
+
+
+        </p>
+        <h4>In the above loop we run the loop until the value of i becomes false, and print PW Skills as long as the loop runs(i is true)</h4>
+     </li>
+     <hr>
+     <li>
+       
+        <span> While Loop:</span>
+        <p>
+            <span>SYNTAX</span> <br><br>
+            while ( condition ) {    <br> 
+                // body of the loop     <br>
+            } <br>
+        </p>
+        <p class="red">
+            <span>Example</span>    <br> <br>
+
+            let i = 1,  n = 4;  <br>
+            while (i <= n )  {     <br>
+                console.log(i);  <br>
+                i = i + 1;  <br>
+            }   <br><br>
+
+            // Output      <br>
+            / *         <br>
+            1   <br>
+            2   <br>
+            3   <br>
+            4   <br>
+            * /
+
+
+        </p>
+        <h4>This loop keeps on running as long as the condition is true.</h4>
+
+     </li>
+     <hr>
+     <li>
+         
+        <span> Do While Loop:</span>
+        <p>
+            <span>SYNTAX</span> <br><br>
+            do {    <br> 
+                // body of the loop     <br>
+            } while (condition); <br>
+        </p>
+        <p class="red">
+            <span>Example</span>    <br> <br>
+
+            let result = ' ';   <br>
+            let i = 0;  <br>
+
+            do  {     <br>
+                i = i + 1;  <br> 
+                result = result + i;  <br>
+                } while (i < 7);  <br><br>
+
+                console.log(result);    <br>
+
+            // Output      <br>
+            / *         <br>
+            1234567     <br>
+            * /
+
+
+        </p>
+        <h4>Here we write a program to print numbers from 1 to 7 in a line using do-while loop</h4>
+     </li>
+     <hr>
+</ol>
